@@ -1,88 +1,54 @@
-/* Reset dasar */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-body {
-    font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
-}
-
-/* Header dengan teks berjalan */
-header {
-    background: #2c6e49;
-    color: white;
-    text-align: center;
-    padding: 15px 0;
-    font-size: 18px;
-}
-
-/* Navigasi */
+/* Reset Navigasi */
 nav {
-    background: #a3d9a5;
-    padding: 10px;
-    text-align: center;
+    background: #2c6e49; /* Warna hijau tua */
+    padding: 10px 0;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
 }
 
-nav ul {
+.navbar {
     list-style: none;
-    padding: 0;
     display: flex;
     justify-content: center;
+    align-items: center;
     flex-wrap: wrap;
+    padding: 0;
     gap: 15px;
 }
 
-nav ul li {
+.navbar li {
     display: inline-block;
 }
 
-nav ul li a {
+.navbar li a {
     text-decoration: none;
-    color: #333;
+    color: white;
     font-weight: bold;
     padding: 10px 15px;
-    background: rgba(255, 255, 255, 0.7);
+    background: rgba(255, 255, 255, 0.2);
     border-radius: 5px;
     transition: 0.3s;
 }
 
-nav ul li a:hover {
-    background: #2c6e49;
-    color: white;
+/* Efek hover */
+.navbar li a:hover {
+    background: #a3d9a5;
+    color: black;
 }
 
-/* Container utama */
-.container {
-    max-width: 800px;
-    margin: 20px auto;
-    padding: 20px;
-    background: white;
-    border-radius: 10px;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
-    text-align: center;
-}
+/* Navigasi responsif */
+@media (max-width: 600px) {
+    .navbar {
+        flex-direction: column;
+        align-items: center;
+    }
 
-/* Foto Kelas */
-.foto-container {
-    margin-top: 20px;
-}
+    .navbar li {
+        width: 100%;
+        text-align: center;
+    }
 
-.foto-kelas {
-    width: 100%;
-    max-width: 500px; /* Ukuran maksimal supaya nggak melebar */
-    height: auto;
-    border-radius: 10px;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
-}
-
-/* Footer */
-footer {
-    text-align: center;
-    background: #2c6e49;
-    color: white;
-    padding: 10px;
-    margin-top: 20px;
+    .navbar li a {
+        display: block;
+        width: 100%;
+    }
 }
