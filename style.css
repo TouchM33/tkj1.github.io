@@ -30,24 +30,47 @@ nav ul {
     list-style: none;
     display: flex;
     justify-content: center;
-    gap: 15px;
+    align-items: center;
+    flex-wrap: wrap; /* Responsif */
+    padding: 0;
+    gap: 15px; /* Jarak antar menu */
 }
 
 nav ul li {
-    display: inline;
+    display: inline-block;
 }
 
 nav ul li a {
     text-decoration: none;
     color: white;
+    font-weight: bold;
     padding: 10px 15px;
     background: rgba(255, 255, 255, 0.2);
     border-radius: 5px;
     transition: 0.3s;
 }
 
+/* Hover efek */
 nav ul li a:hover {
     background: #1E5631;
+}
+
+/* Responsif untuk layar kecil */
+@media (max-width: 600px) {
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav ul li {
+        width: 100%;
+        text-align: center;
+    }
+
+    nav ul li a {
+        display: block;
+        width: 100%;
+    }
 }
 
 /* Kontainer */
