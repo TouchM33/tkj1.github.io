@@ -84,3 +84,22 @@ nav {
         padding: 0 15px;
     }
 }
+/* Foto Kelas di Beranda */
+.foto-container {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.foto-kelas {
+    max-width: 100%;  /* Biar nggak lebih lebar dari container */
+    height: auto;  /* Menjaga proporsi gambar */
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Batas maksimum biar nggak terlalu gede */
+@media screen and (min-width: 768px) {
+    .foto-kelas {
+        max-width: 70%; /* Di PC ukurannya dibatasi */
+    }
+}
