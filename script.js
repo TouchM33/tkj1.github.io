@@ -1,21 +1,18 @@
-// Quotes dari TKJ1 (Ganti otomatis setiap 3 detik)
-const quotes = [
-    "Jangan lupa bahagia, tugas bisa belakangan! 😂",
-    "TKJ1 terbaik sepanjang masa! 💪",
-    "Ingat terus kenangan ini, bro! 🔥",
-    "Dulu kita sibuk tugas, sekarang sibuk nostalgia. 😆",
-    "Kelas paling solid, TKJ1 no debat! 👊",
-    "Mau lulus tapi masih betah di kelas ini. 😢",
-    "Dulu kita belajar bareng, sekarang sukses bareng! 🚀",
-];
+document.addEventListener("DOMContentLoaded", function() {
+    const quotes = [
+        "Jangan pernah lupa dengan kenangan indah kita di TKJ1! 😊",
+        "Kelas ini penuh dengan orang-orang luar biasa! 💙",
+        "Persahabatan kita nggak akan pernah pudar! 🔥",
+        "Semangat terus untuk masa depan kita! 🚀",
+        "Gak ada yang bisa ngalahin kekompakan TKJ1! 💪"
+    ];
 
-function updateQuote() {
-    const quoteElement = document.getElementById("random-quote");
-    const randomIndex = Math.floor(Math.random() * quotes.length);
-    quoteElement.innerText = quotes[randomIndex];
-}
+    function updateQuote() {
+        const quoteElement = document.getElementById("random-quote");
+        const randomIndex = Math.floor(Math.random() * quotes.length);
+        quoteElement.textContent = quotes[randomIndex];
+    }
 
-// Update pertama kali
-updateQuote();
-// Update setiap 3 detik
-setInterval(updateQuote, 3000);
+    setInterval(updateQuote, 3000); // Ganti quotes setiap 3 detik
+    updateQuote(); // Tampilkan langsung saat halaman dimuat
+});
