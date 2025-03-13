@@ -4,48 +4,66 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Website Kelas</title>
+    <title>Kenangan Kelas</title>
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-    <!-- Header dengan teks berjalan -->
+    <!-- Musik Latar -->
+    <audio id="bg-music" loop>
+        <source src="musik-latar.mp3" type="audio/mpeg">
+    </audio>
+    <button id="music-toggle">🎵 Play</button>
+
+    <!-- Header -->
     <header>
-        <marquee behavior="scroll" direction="left" scrollamount="5">
-            🎉 Selamat Datang di Website Kelas Kita! 🎉
-        </marquee>
+        <marquee><h1>Selamat Datang di Buku Kenangan Kelas!</h1></marquee>
     </header>
 
     <!-- Navigasi -->
-<nav>
-    <ul class="navbar">
-        <li><a href="index.html">Beranda</a></li>
-        <li><a href="tentang.html">Tentang Kelas</a></li>
-        <li><a href="galeri.html">Galeri</a></li>
-        <li><a href="anggota.html">Daftar Anggota</a></li>
-        <li><a href="kontak.html">Kontak</a></li>
-    </ul>
-</nav>
+    <nav>
+        <ul>
+            <li><a href="#">Beranda</a></li>
+            <li><a href="#">Buku Kenangan</a></li>
+            <li><a href="#">Foto Kelas</a></li>
+            <li><a href="#">Quotes Random</a></li>
+            <li><a href="#">Testimoni Guru</a></li>
+        </ul>
+    </nav>
 
-
-    <!-- Konten Utama -->
-    <div class="container">
-        <h2>✨ Website Kelas Sebagai Kenangan ✨</h2>
-        <p>Website ini dibuat sebagai kenangan untuk kita semua. Semoga bisa menjadi tempat berbagi cerita dan nostalgia di masa depan! 😊</p>
-
-        <!-- Foto Kelas -->
-        <div class="foto-container">
-            <h3>📸 Foto Kelas Kita</h3>
-            <img src="foto-kelas.jpg" alt="Foto Kelas" class="foto-kelas">
+    <!-- Foto Kelas -->
+    <section id="foto-kelas">
+        <h2>📸 Foto Kelas</h2>
+        <div class="slideshow">
+            <img id="slide" src="foto1.jpg" alt="Foto Kelas">
         </div>
-    </div>
+    </section>
 
-    <!-- Footer -->
-    <footer>
-        <p>&copy; 2025 Website Kelas | Kenangan Kita Selamanya</p>
-    </footer>
+    <!-- Buku Kenangan -->
+    <section id="buku-kenangan">
+        <h2>📖 Buku Kenangan Digital</h2>
+        <textarea id="pesan" placeholder="Tulis kenanganmu di sini..."></textarea>
+        <button onclick="simpanPesan()">Simpan</button>
+        <ul id="daftar-pesan"></ul>
+    </section>
 
+    <!-- Quotes Random -->
+    <section id="quotes">
+        <h2>📝 Quotes dari Teman Kelas</h2>
+        <p id="quote-text">Loading...</p>
+        <button onclick="tampilkanQuote()">🎲 Ganti Quote</button>
+    </section>
+
+    <!-- Testimoni Guru -->
+    <section id="testimoni">
+        <h2>👨‍🏫 Testimoni Guru</h2>
+        <video id="video-guru" width="100%" controls autoplay loop>
+            <source src="testimoni.mp4" type="video/mp4">
+        </video>
+    </section>
+
+    <script src="script.js"></script>
 </body>
 
 </html>
