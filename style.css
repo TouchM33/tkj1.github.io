@@ -101,3 +101,18 @@ footer {
     padding: 10px;
     margin-top: 20px;
 }
+/* Foto Kelas di Index */
+.foto-container {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.foto-kelas {
+    max-width: 100%; /* Biar nggak melebihi container */
+    height: auto; /* Menjaga aspek rasio */
+    width: 80%; /* Atur sesuai kebutuhan, bisa dikurangi kalau masih terlalu besar */
+    max-height: 400px; /* Batas tinggi maksimal */
+    object-fit: cover; /* Biar nggak melebar atau gepeng */
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
