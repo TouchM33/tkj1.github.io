@@ -20,12 +20,11 @@ document.addEventListener("DOMContentLoaded", function() {
 document.addEventListener("DOMContentLoaded", function () {
     let container = document.getElementById("foto-container");
 
-    // Generate 14 foto otomatis
     for (let i = 1; i <= 14; i++) {
         let img = document.createElement("img");
-        img.src = `image/kelulusan${i}.jpg`;  // Path ke folder image
+        img.src = `image/kelulusan${i}.jpg`;  // Path gambar
         img.alt = `Kelulusan ${i}`;
-        img.classList.add("foto-kelulusan"); // Tambahin class biar bisa diatur di CSS
+        img.classList.add("foto-kelulusan");
         container.appendChild(img);
     }
 });
