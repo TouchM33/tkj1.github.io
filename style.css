@@ -9,68 +9,120 @@ body {
     font-family: Arial, sans-serif;
     background-color: #f4f4f4;
     text-align: center;
-    padding: 20px;
+}
+
+/* Header */
+header {
+    background: #2c6e49;
+    color: white;
+    padding: 20px 0;
+}
+
+/* Teks berjalan */
+.marquee {
+    font-size: 20px;
+    font-weight: bold;
+    color: #fff;
+    background: #2c6e49;
+    padding: 10px;
+    white-space: nowrap;
+    overflow: hidden;
+    position: relative;
+}
+
+.marquee span {
+    display: inline-block;
+    position: absolute;
+    width: 100%;
+    animation: marquee 10s linear infinite;
+}
+
+/* Animasi teks berjalan */
+@keyframes marquee {
+    from { transform: translateX(100%); }
+    to { transform: translateX(-100%); }
 }
 
 /* Navigasi */
 nav {
-    background: #3498db;
-    padding: 10px;
+    background: #2c6e49;
+    padding: 10px 0;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
 }
 
-nav ul {
+.navbar {
     list-style: none;
     display: flex;
     justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
     gap: 15px;
+    padding: 0;
 }
 
-nav ul li {
+.navbar li {
     display: inline-block;
 }
 
-nav ul li a {
+.navbar li a {
     text-decoration: none;
     color: white;
+    font-weight: bold;
     padding: 10px 15px;
-    background: rgba(255, 255, 255, 0.3);
+    background: rgba(255, 255, 255, 0.2);
     border-radius: 5px;
     transition: 0.3s;
 }
 
-nav ul li a:hover {
-    background: #2980b9;
+/* Efek hover */
+.navbar li a:hover {
+    background: #a3d9a5;
+    color: black;
 }
 
-/* Slideshow Foto Kelas */
-.slideshow img {
-    width: 80%;
-    max-width: 600px;
+/* Navigasi responsif */
+@media (max-width: 600px) {
+    .navbar {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .navbar li {
+        width: 100%;
+        text-align: center;
+    }
+
+    .navbar li a {
+        display: block;
+        width: 100%;
+    }
+}
+
+/* Container utama */
+.container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background: white;
     border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
 }
 
-/* Buku Kenangan */
-#buku-kenangan textarea {
-    width: 80%;
-    height: 100px;
-    margin-top: 10px;
+/* Foto kelas fix ukuran */
+.foto-kelas {
+    width: 100%; /* Biar responsif */
+    max-width: 600px; /* Biar nggak terlalu gede */
+    height: auto;
+    border-radius: 10px;
+    margin-top: 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
 }
 
-/* Quotes */
-#quote-text {
-    font-size: 1.2em;
-    font-weight: bold;
-}
-
-/* Musik Latar */
-#music-toggle {
-    position: fixed;
-    top: 10px;
-    right: 10px;
-    padding: 8px 12px;
-    background: #2ecc71;
+/* Footer */
+footer {
+    text-align: center;
+    background: #2c6e49;
     color: white;
-    border: none;
-    cursor: pointer;
-    border-radius: 5px;
+    padding: 10px;
+    margin-top: 20px;
 }
