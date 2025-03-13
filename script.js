@@ -16,15 +16,3 @@ document.addEventListener("DOMContentLoaded", function() {
     setInterval(updateQuote, 3000); // Ganti quotes setiap 3 detik
     updateQuote(); // Tampilkan langsung saat halaman dimuat
 });
-
-document.addEventListener("DOMContentLoaded", function () {
-    let container = document.getElementById("foto-container");
-
-    for (let i = 1; i <= 14; i++) {
-        let img = document.createElement("img");
-        img.src = `images/kelulusan${i}.jpg`;  // Path gambar
-        img.alt = `Kelulusan ${i}`;
-        img.classList.add("foto-kelulusan");
-        container.appendChild(img);
-    }
-});
