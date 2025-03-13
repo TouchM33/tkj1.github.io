@@ -16,3 +16,16 @@ document.addEventListener("DOMContentLoaded", function() {
     setInterval(updateQuote, 3000); // Ganti quotes setiap 3 detik
     updateQuote(); // Tampilkan langsung saat halaman dimuat
 });
+
+document.addEventListener("DOMContentLoaded", function () {
+    let container = document.getElementById("foto-container");
+
+    // Generate 14 foto otomatis
+    for (let i = 1; i <= 14; i++) {
+        let img = document.createElement("img");
+        img.src = `image/kelulusan${i}.jpg`;  // Path ke folder image
+        img.alt = `Kelulusan ${i}`;
+        img.classList.add("foto-kelulusan"); // Tambahin class biar bisa diatur di CSS
+        container.appendChild(img);
+    }
+});
