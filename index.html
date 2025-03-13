@@ -4,36 +4,45 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Website Kelas</title>
+    <title>Website Kelas TKJ1</title>
     <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
 </head>
 
-</div>
-    
 <body>
 
     <!-- Header dengan teks berjalan -->
     <header>
         <marquee behavior="scroll" direction="left" scrollamount="5">
-            🎉 Selamat Datang di Website Kelas Kita! 🎉 🚫 Atention Please 🚫 Hati-Hati Karena Banyak Tokoh-Tokoh Ganteng Cantik Baik Hati dan Tidak Sombong
+            🎉 Selamat Datang di Website Kelas TKJ1! 🎉
         </marquee>
     </header>
 
     <!-- Navigasi -->
-<nav>
-    <ul class="navbar">
-        <li><a href="index.html">Beranda</a></li>
-        <li><a href="tentang.html">Tentang Kelas</a></li>
-        <li><a href="galeri.html">Galeri</a></li>
-        <li><a href="anggota.html">Daftar Anggota</a></li>
-        <li><a href="kontak.html">Kontak</a></li>
-    </ul>
-</nav>
-
+    <nav>
+        <ul class="navbar">
+            <li><a href="index.html">Beranda</a></li>
+            <li><a href="tentang.html">Tentang Kelas</a></li>
+            <li class="dropdown">
+                <a href="galeri.html">Galeri ⬇️</a>
+                <ul class="dropdown-content">
+                    <li><a href="kelulusan.html">📷 Kelulusan</a></li>
+                    <li><a href="jalanjalan.html">🏕️ Jalan-jalan</a></li>
+                    <li><a href="acaralain.html">🎉 Acara Kelas</a></li>
+                    <li><a href="ultras.html">🏴‍☠️ Ultras TKJ1</a></li>
+                    <li><a href="studio.html">📸 Foto Studio</a></li>
+                    <li><a href="sumpah.html">🦸🏻 Sumpah Pemuda</a></li>
+                    <li><a href="guru.html">🧑🏻‍🏫 Hari Guru</a></li>
+                </ul>
+            </li>
+            <li><a href="anggota.html">Daftar Anggota</a></li>
+            <li><a href="kontak.html">Kontak</a></li>
+        </ul>
+    </nav>
 
     <!-- Konten Utama -->
     <div class="container">
-        <h2>✨ Website Kelas Sebagai Kenangan ✨</h2>
+        <h2>✨ Website Kelas TKJ1 Sebagai Kenangan ✨</h2>
         <p>Website ini dibuat sebagai kenangan untuk kita semua. Semoga bisa menjadi tempat berbagi cerita dan nostalgia di masa depan! 😊</p>
 
         <!-- Foto Kelas -->
@@ -41,11 +50,17 @@
             <h3>📸 Foto Kelas Kita</h3>
             <img src="foto-kelas.jpg" alt="Foto Kelas" class="foto-kelas">
         </div>
+
+        <!-- Kata-kata dari TKJ1 (Quotes Random) -->
+        <div class="quotes-container">
+            <h3>📝 Kata-kata dari TKJ1</h3>
+            <p id="random-quote">Loading...</p>
+        </div>
     </div>
 
     <!-- Footer -->
     <footer>
-        <p>&copy; 2025 Website Kelas | Kenangan Kita Selamanya</p>
+        <p>&copy; 2025 Website Kelas TKJ1 | Kenangan Kita Selamanya</p>
     </footer>
 
 </body>
