@@ -165,11 +165,23 @@ nav {
 
 /* Kontak */
 .kontak-box {
+/* Container Kontak */
+.kontak-container {
+    max-width: 400px; /* Batas lebar biar nggak melebar ke samping */
+    margin: auto; /* Pusatkan di tengah */
+    padding: 20px;
+    background: #0f0f0f; /* Warna hitam ala cyber */
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 255, 0, 0.5);
+    text-align: center;
+}
+
+/* Link Kontak */
+.kontak-box {
     display: flex;
     flex-direction: column;
-    align-items: center;
     gap: 15px;
-    margin: 20px 0;
+    margin-top: 10px;
 }
 
 .kontak-item {
@@ -179,12 +191,12 @@ nav {
     text-decoration: none;
     font-size: 18px;
     font-weight: bold;
-    background: black;
-    padding: 10px 15px;
-    border-radius: 10px;
-    border: 2px solid #00ff00;
-    color: #00ff00;
-    transition: all 0.3s ease;
+    background: rgba(0, 255, 0, 0.2);
+    padding: 12px;
+    border-radius: 8px;
+    transition: all 0.3s ease-in-out;
+    justify-content: center; /* Pusatkan isi */
+    width: 100%; /* Lebar otomatis sesuai container */
 }
 
 .kontak-item img {
@@ -193,9 +205,45 @@ nav {
 }
 
 .kontak-item:hover {
-    background: #004400;
+    background: rgba(0, 255, 0, 0.5);
     transform: scale(1.05);
 }
+
+/* Formulir Saran */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+    max-width: 350px;
+    margin: auto;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #0f0;
+    border-radius: 5px;
+    font-size: 16px;
+    background: #222;
+    color: #0f0;
+}
+
+button {
+    background: #0f0;
+    color: black;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+button:hover {
+    background: #00ff00;
+}
+
 
 /* Formulir Saran */
 form {
