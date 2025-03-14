@@ -126,6 +126,7 @@ nav {
 .galeri-grid img:hover {
     transform: scale(1.1);
 }
+
 .kontak-box {
     display: flex;
     flex-direction: column;
