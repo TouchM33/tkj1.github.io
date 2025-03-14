@@ -163,6 +163,63 @@ nav {
     transform: scale(1.1);
 }
 
+/* Container Kontak */
+.kontak-container {
+    max-width: 400px; /* Batas lebar biar nggak melebar ke samping */
+    margin: auto; /* Pusatkan di tengah */
+    padding: 20px;
+    background: #0f0f0f; /* Warna hitam ala cyber */
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 255, 0, 0.5);
+    text-align: center;
+}
+
+/* Link Kontak */
+.kontak-box {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 10px;
+}
+
+.kontak-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+    background: rgba(0, 255, 0, 0.2);
+    padding: 12px;
+    border-radius: 8px;
+    transition: all 0.3s ease-in-out;
+    justify-content: center; /* Pusatkan isi */
+    width: 100%; /* Lebar otomatis sesuai container */
+    overflow: hidden; /* Supaya nggak keluar batas */
+    text-overflow: ellipsis; /* Potong teks panjang */
+    white-space: nowrap; /* Jangan biarkan teks turun */
+}
+
+/* Jika layar kecil, biar link bisa turun ke baris baru */
+@media screen and (max-width: 480px) {
+    .kontak-item {
+        white-space: normal; /* Izinkan teks turun */
+        word-wrap: break-word; /* Putus teks yang kepanjangan */
+        font-size: 14px; /* Biar lebih compact */
+    }
+}
+
+/* Ikon dalam kontak */
+.kontak-item img {
+    width: 25px;
+    height: 25px;
+}
+
+.kontak-item:hover {
+    background: rgba(0, 255, 0, 0.5);
+    transform: scale(1.05);
+}
+
 
 /* Formulir Saran */
 form {
@@ -197,49 +254,6 @@ button {
 
 button:hover {
     background: #00ff00;
-}
-/* Container Kontak */
-.kontak-container {
-    max-width: 400px; /* Batas lebar biar nggak melebar ke samping */
-    margin: auto; /* Pusatkan di tengah */
-    padding: 20px;
-    background: #0f0f0f; /* Warna hitam ala cyber */
-    border-radius: 10px;
-    box-shadow: 0px 4px 8px rgba(0, 255, 0, 0.5);
-    text-align: center;
-}
-
-/* Link Kontak */
-.kontak-box {
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
-    margin-top: 10px;
-}
-
-.kontak-item {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    text-decoration: none;
-    font-size: 18px;
-    font-weight: bold;
-    background: rgba(0, 255, 0, 0.2);
-    padding: 12px;
-    border-radius: 8px;
-    transition: all 0.3s ease-in-out;
-    justify-content: center; /* Pusatkan isi */
-    width: 100%; /* Lebar otomatis sesuai container */
-}
-
-.kontak-item img {
-    width: 30px;
-    height: 30px;
-}
-
-.kontak-item:hover {
-    background: rgba(0, 255, 0, 0.5);
-    transform: scale(1.05);
 }
 
 /* Formulir Saran */
