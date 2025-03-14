@@ -2,6 +2,7 @@ document.addEventListener("DOMContentLoaded", function() {
     const quotes = [
         "Jangan pernah lupa dengan kenangan indah kita di TKJ1! 😊",
         "Kelas ini penuh dengan orang-orang luar biasa! 💙",
+        "Jangan remehkan aku karena aku bukan sangu🤌🏻"
         "Persahabatan kita nggak akan pernah pudar! 🔥",
         "Semangat terus untuk masa depan kita! 🚀",
         "Gak ada yang bisa ngalahin kekompakan TKJ1! 💪"
