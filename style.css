@@ -2,19 +2,49 @@
 body, ul {
     margin: 0;
     padding: 0;
-    font-family: Arial, sans-serif;
+    font-family: 'Courier New', monospace;
+}
+
+/* Tema Cyber Hijau */
+body {
+    background-color: black;
+    color: #00ff00;
+    text-align: center;
+}
+
+/* Header Teks Berjalan */
+header {
+    background-color: #00ff00;
+    color: black;
+    padding: 10px;
+    font-weight: bold;
+}
+
+/* Judul Kedip-Kedip */
+.judul-cyber {
+    font-size: 2.5em;
+    text-align: center;
+    font-weight: bold;
+    color: #00ff00;
+    animation: blink 1s infinite alternate;
+}
+
+/* Animasi Kedip-Kedip */
+@keyframes blink {
+    from { opacity: 1; }
+    to { opacity: 0; }
 }
 
 /* Navigasi */
 nav {
-    background: #2c3e50;
+    background: #002200;
 }
 
 .navbar {
     list-style: none;
     padding: 0;
     display: flex;
-    flex-direction: column; /* Navigasi jadi vertikal buat HP */
+    flex-direction: column; /* Navigasi vertikal buat HP */
     align-items: center;
 }
 
@@ -26,7 +56,7 @@ nav {
 .navbar li a {
     display: block;
     text-decoration: none;
-    color: white;
+    color: #00ff00;
     padding: 12px;
     font-size: 18px;
     font-weight: bold;
@@ -34,7 +64,7 @@ nav {
 }
 
 .navbar li a:hover {
-    background: #16a085;
+    background: #004400;
 }
 
 /* Dropdown */
@@ -48,13 +78,13 @@ nav {
     top: 100%;
     left: 50%;
     transform: translateX(-50%);
-    background: white;
+    background: black;
     list-style: none;
     width: 180px;
     padding: 0;
     text-align: left;
     border-radius: 5px;
-    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+    box-shadow: 0px 5px 10px rgba(0, 255, 0, 0.5);
 }
 
 .dropdown-content li {
@@ -64,7 +94,7 @@ nav {
 .dropdown-content li a {
     display: block;
     padding: 10px;
-    color: #333;
+    color: #00ff00;
     font-size: 16px;
 }
 
@@ -75,7 +105,7 @@ nav {
 /* Responsif buat layar gede (PC) */
 @media screen and (min-width: 768px) {
     .navbar {
-        flex-direction: row; /* Navigasi jadi horizontal di desktop */
+        flex-direction: row;
         justify-content: center;
     }
 
@@ -84,26 +114,32 @@ nav {
         padding: 0 15px;
     }
 }
-/* Foto Kelas di Beranda */
+
+/* Konten Utama */
+.container {
+    margin: 20px auto;
+    width: 90%;
+    max-width: 800px;
+    background: #001100;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px #00ff00;
+}
+
+/* Foto Kelas */
 .foto-container {
     text-align: center;
     margin-top: 20px;
 }
 
 .foto-kelas {
-    max-width: 100%;  /* Biar nggak lebih lebar dari container */
-    height: auto;  /* Menjaga proporsi gambar */
+    max-width: 100%;
+    height: auto;
     border-radius: 10px;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    border: 2px solid #00ff00;
 }
 
-/* Batas maksimum biar nggak terlalu gede */
-@media screen and (min-width: 768px) {
-    .foto-kelas {
-        max-width: 70%; /* Di PC ukurannya dibatasi */
-    }
-}
-/* Gaya Galeri Foto */
+/* Galeri */
 .galeri-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
@@ -116,10 +152,10 @@ nav {
 .galeri-grid img {
     width: 100%;
     height: auto;
-    max-height: 200px; /* Supaya foto nggak terlalu tinggi */
+    max-height: 200px;
     object-fit: cover;
     border-radius: 10px;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    box-shadow: 0px 4px 8px rgba(0, 255, 0, 0.5);
     transition: transform 0.3s ease-in-out;
 }
 
@@ -127,6 +163,7 @@ nav {
     transform: scale(1.1);
 }
 
+/* Kontak */
 .kontak-box {
     display: flex;
     flex-direction: column;
@@ -142,9 +179,11 @@ nav {
     text-decoration: none;
     font-size: 18px;
     font-weight: bold;
-    background: #f4f4f4;
+    background: black;
     padding: 10px 15px;
     border-radius: 10px;
+    border: 2px solid #00ff00;
+    color: #00ff00;
     transition: all 0.3s ease;
 }
 
@@ -154,10 +193,11 @@ nav {
 }
 
 .kontak-item:hover {
-    background: #ddd;
+    background: #004400;
     transform: scale(1.05);
 }
 
+/* Formulir Saran */
 form {
     display: flex;
     flex-direction: column;
@@ -165,19 +205,25 @@ form {
     width: 100%;
     max-width: 400px;
     margin: auto;
+    background: black;
+    padding: 20px;
+    border-radius: 10px;
+    border: 2px solid #00ff00;
 }
 
 input, textarea {
     width: 100%;
     padding: 10px;
-    border: 1px solid #ccc;
+    border: 1px solid #00ff00;
     border-radius: 5px;
     font-size: 16px;
+    background: black;
+    color: #00ff00;
 }
 
 button {
-    background: #007bff;
-    color: white;
+    background: #00ff00;
+    color: black;
     padding: 10px;
     border: none;
     border-radius: 5px;
@@ -187,5 +233,14 @@ button {
 }
 
 button:hover {
-    background: #0056b3;
+    background: #004400;
+}
+
+/* Footer */
+footer {
+    background-color: #00ff00;
+    color: black;
+    padding: 10px;
+    font-weight: bold;
+    margin-top: 20px;
 }
