@@ -16,3 +16,11 @@ document.addEventListener("DOMContentLoaded", function() {
     setInterval(updateQuote, 3000); // Ganti quotes setiap 3 detik
     updateQuote(); // Tampilkan langsung saat halaman dimuat
 });
+document.getElementById("formSaran").addEventListener("submit", function(event) {
+    event.preventDefault(); // Mencegah refresh halaman
+    document.getElementById("konfirmasi").style.display = "block";
+    setTimeout(() => {
+        document.getElementById("konfirmasi").style.display = "none";
+    }, 3000);
+    this.reset();
+});
