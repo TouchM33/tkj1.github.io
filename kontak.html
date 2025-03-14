@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kontak Kelas</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>📞 Kontak Kelas TKJ1</h1>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">Beranda</a></li>
+            <li><a href="galeri.html">Galeri</a></li>
+            <li><a href="kontak.html" class="active">Kontak</a></li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <h2>💬 Hubungi Kami</h2>
+        <p>Silakan hubungi kami melalui kontak di bawah ini:</p>
+
+        <div class="kontak-box">
+            <a href="https://www.instagram.com/instagram_kelas" target="_blank" class="kontak-item">
+                <img src="images/instagram.png" alt="Instagram">
+                <span>https://www.instagram.com/techno.one12?igsh=aDhvdDcxNzVsNWl2</span>
+            </a>
+            <a href="mailto:pentrace24@gmail.com" class="kontak-item">
+                <img src="images/email.png" alt="Email">
+                <span>pentrace24@gmail.com</span>
+            </a>
+        </div>
+
+        <h2>📝 Formulir Saran & Kritik</h2>
+        <form id="formSaran">
+            <input type="text" id="nama" placeholder="Nama Kamu" required>
+            <textarea id="pesan" placeholder="Tulis saran atau kritik kamu di sini..." required></textarea>
+            <button type="submit">Kirim</button>
+        </form>
+        <p id="konfirmasi" style="display:none; color: green;">Terima kasih atas sarannya! 😊</p>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 Kenangan Kelas TKJ1</p>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
