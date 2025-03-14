@@ -163,8 +163,41 @@ nav {
     transform: scale(1.1);
 }
 
-/* Kontak */
-.kontak-box {
+
+/* Formulir Saran */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+    max-width: 350px;
+    margin: auto;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #0f0;
+    border-radius: 5px;
+    font-size: 16px;
+    background: #222;
+    color: #0f0;
+}
+
+button {
+    background: #0f0;
+    color: black;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+button:hover {
+    background: #00ff00;
+}
 /* Container Kontak */
 .kontak-container {
     max-width: 400px; /* Batas lebar biar nggak melebar ke samping */
@@ -243,7 +276,6 @@ button {
 button:hover {
     background: #00ff00;
 }
-
 
 /* Formulir Saran */
 form {
