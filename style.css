@@ -20,19 +20,19 @@ header {
     font-weight: bold;
 }
 
-/* Judul Kedip-Kedip */
-.judul-cyber {
+/* Judul Glitch */
+.glitch-text {
     font-size: 2.5em;
     text-align: center;
     font-weight: bold;
     color: #00ff00;
-    animation: blink 1s infinite alternate;
+    animation: glitch 0.5s infinite alternate;
 }
 
-/* Animasi Kedip-Kedip */
-@keyframes blink {
-    from { opacity: 1; }
-    to { opacity: 0; }
+/* Animasi Glitch */
+@keyframes glitch {
+    from { text-shadow: 2px 2px 5px #00ff00; }
+    to { text-shadow: -2px -2px 5px #00ff00; }
 }
 
 /* Navigasi */
@@ -44,7 +44,7 @@ nav {
     list-style: none;
     padding: 0;
     display: flex;
-    flex-direction: column; /* Navigasi vertikal buat HP */
+    flex-direction: column;
     align-items: center;
 }
 
@@ -139,154 +139,14 @@ nav {
     border: 2px solid #00ff00;
 }
 
-/* Galeri */
-.galeri-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-    gap: 10px;
-    padding: 10px;
-    justify-content: center;
-    align-items: center;
-}
-
-.galeri-grid img {
-    width: 100%;
-    height: auto;
-    max-height: 200px;
-    object-fit: cover;
+/* Quotes */
+.quotes-container {
+    margin-top: 20px;
+    padding: 15px;
+    background: #002200;
     border-radius: 10px;
-    box-shadow: 0px 4px 8px rgba(0, 255, 0, 0.5);
-    transition: transform 0.3s ease-in-out;
+    box-shadow: 0px 0px 5px #00ff00;
 }
-
-.galeri-grid img:hover {
-    transform: scale(1.1);
-}
-
-/* Container Kontak */
-.kontak-container {
-    max-width: 400px; /* Batas lebar biar nggak melebar ke samping */
-    margin: auto; /* Pusatkan di tengah */
-    padding: 20px;
-    background: #0f0f0f; /* Warna hitam ala cyber */
-    border-radius: 10px;
-    box-shadow: 0px 4px 8px rgba(0, 255, 0, 0.5);
-    text-align: center;
-}
-
-/* Link Kontak */
-.kontak-box {
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
-    margin-top: 10px;
-}
-
-.kontak-item {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    text-decoration: none;
-    font-size: 16px;
-    font-weight: bold;
-    background: rgba(0, 255, 0, 0.2);
-    padding: 12px;
-    border-radius: 8px;
-    transition: all 0.3s ease-in-out;
-    justify-content: center; /* Pusatkan isi */
-    width: 100%; /* Lebar otomatis sesuai container */
-    overflow: hidden; /* Supaya nggak keluar batas */
-    text-overflow: ellipsis; /* Potong teks panjang */
-    white-space: nowrap; /* Jangan biarkan teks turun */
-}
-
-/* Jika layar kecil, biar link bisa turun ke baris baru */
-@media screen and (max-width: 480px) {
-    .kontak-item {
-        white-space: normal; /* Izinkan teks turun */
-        word-wrap: break-word; /* Putus teks yang kepanjangan */
-        font-size: 14px; /* Biar lebih compact */
-    }
-}
-
-/* Ikon dalam kontak */
-.kontak-item img {
-    width: 25px;
-    height: 25px;
-}
-
-.kontak-item:hover {
-    background: rgba(0, 255, 0, 0.5);
-    transform: scale(1.05);
-}
-
-/* Container Form Saran */
-.saran-container {
-    max-width: 400px; /* Lebar maksimal biar nggak melebar */
-    margin: auto; /* Pusatkan di tengah */
-    padding: 20px;
-    background: #0f0f0f; /* Tema gelap ala cyber */
-    border-radius: 10px;
-    box-shadow: 0px 4px 8px rgba(0, 255, 0, 0.5);
-    text-align: center;
-}
-
-/* Judul Form */
-.saran-container h3 {
-    color: #0f0;
-    font-size: 20px;
-    margin-bottom: 10px;
-}
-
-/* Form Input */
-form {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-    width: 100%;
-    max-width: 350px;
-    margin: auto;
-}
-
-/* Input & Textarea */
-input, textarea {
-    width: 100%;
-    padding: 10px;
-    border: 1px solid #0f0;
-    border-radius: 5px;
-    font-size: 16px;
-    background: #1a1a1a;
-    color: #0f0;
-    outline: none;
-}
-
-/* Tombol Kirim */
-button {
-    background: #00ff00;
-    color: black;
-    padding: 10px;
-    border: none;
-    border-radius: 5px;
-    font-size: 16px;
-    cursor: pointer;
-    transition: all 0.3s ease;
-}
-
-button:hover {
-    background: #00cc00;
-}
-
-/* Konfirmasi Saran */
-#konfirmasi {
-    display: none;
-    color: #0f0;
-    font-weight: bold;
-    margin-top: 10px;
-    background: rgba(0, 255, 0, 0.2);
-    padding: 10px;
-    border-radius: 5px;
-}
-
 
 /* Footer */
 footer {
