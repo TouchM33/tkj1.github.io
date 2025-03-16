@@ -44,14 +44,3 @@ document.addEventListener("DOMContentLoaded", function () {
         });
     }
 });
-
-document.addEventListener("DOMContentLoaded", function() {
-    document.getElementById("formSaran").addEventListener("submit", function(event) {
-        event.preventDefault(); // Cegah refresh halaman
-        document.getElementById("konfirmasi").style.display = "block";
-        setTimeout(() => {
-            document.getElementById("konfirmasi").style.display = "none";
-        }, 3000);
-        this.reset();
-    });
-});
