@@ -156,3 +156,9 @@ footer {
     font-weight: bold;
     margin-top: 20px;
 }
+img {
+    max-width: 100%;  /* Biar nggak lebih besar dari container */
+    height: auto;     /* Biar proporsinya tetap */
+    display: block;   /* Biar nggak ada space bawah */
+    margin: 0 auto;   /* Biar gambar tetap di tengah */
+}
